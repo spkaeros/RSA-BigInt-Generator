@@ -23,7 +23,7 @@ func checkErr(bi *big.Int, err error) *big.Int {
 }
 
 func main() {
-	bitSize := minBits
+	bitSize := 512
 	if len(os.Args) > 1 {
 		if i, err := strconv.Atoi(os.Args[1]); err == nil && i <= maxBits && i >= minBits {
 			bitSize = i
